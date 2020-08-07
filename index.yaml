@@ -1,14 +1,50 @@
 apiVersion: v1
 entries:
+  edgex:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-08-07T14:18:28.204142015+08:00"
+    description: A Helm chart for EdgeX Geneva
+    digest: fa6da9fc8d7b222e38a30550753cf6de61e4e8835df0e612b070bc74ba877366
+    name: edgex
+    urls:
+    - edgex-0.1.0.tgz
+    version: 0.1.0
+  kubernetes-dashboard:
+  - apiVersion: v1
+    appVersion: 2.0.3
+    created: "2020-08-07T14:18:28.205413582+08:00"
+    dependencies:
+    - condition: metrics-server.enabled
+      name: metrics-server
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.11.1
+    description: General-purpose web UI for Kubernetes clusters
+    digest: 3ed6c315d05008aae05b69d1cf0afec3018d0ed2ee5c58b1a5f52eba1ad492f1
+    home: https://github.com/kubernetes/dashboard
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    keywords:
+    - kubernetes
+    - dashboard
+    kubeVersion: '>=1.10.0-0'
+    maintainers:
+    - email: cdesaintmartin@wiremind.fr
+      name: desaintmartin
+    name: kubernetes-dashboard
+    sources:
+    - https://github.com/kubernetes/dashboard
+    urls:
+    - kubernetes-dashboard-2.3.0.tgz
+    version: 2.3.0
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-04-08T14:19:31.079089336+08:00"
+    created: "2020-08-07T14:18:28.205706452+08:00"
     description: A Helm chart for Kubernetes
     digest: 6de7ab4f2da011db9ef8e1def8d2fca7d4e79bb4e81e46152a8d3a2969b73820
     name: test
     type: application
     urls:
-    - https://yushanjin.github.io/helm-chart/test-0.1.0.tgz
+    - test-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-08T14:19:31.078672885+08:00"
+generated: "2020-08-07T14:18:28.203078048+08:00"
